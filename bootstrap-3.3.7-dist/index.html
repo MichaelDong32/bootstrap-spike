@@ -56,11 +56,44 @@
     <!--jumbotron-->
 
     <div class="container">
-      <div class="jumbotron">
-        <h1>FergusonPartners</h1>
-        <p>Conflict resolution using restorative practice</p>
-        <a href="#" class="btn btn-primary">Find out more</a>
+      <div id="carouselhacked" class="carousel slide carousel-fade" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carouselhacked" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselhacked" data-slide-to="1"></li>
+        <li data-target="#carouselhacked" data-slide-to="2"></li>
+      </ol>
+ 
+  <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+            <h3>This is image 1</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+            <h3>This is image 2</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1200x315" alt="...">
+          <div class="carousel-caption">
+            <h3>This is image 3</h3>
+          </div>
+        </div>
       </div>
+     
+  <!-- Controls -->
+      <a class="left carousel-control" href="#carouselhacked" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#carouselhacked" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div> <!-- Carousel -->
     <!--adding rows using grid system-->
       <div class="row">
         <div class="col-sm-4">
@@ -150,5 +183,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!--carousel timer jquery script-->
+    <script>
+      $('.carousel').carousel({
+        interval:3000
+      })
+    </script>
   </body>
 </html>
