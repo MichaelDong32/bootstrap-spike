@@ -6,14 +6,20 @@
 body {
 	padding-top: 70px;
 	padding-bottom: 100px;
+	background-color: #4d5a2f;
 }
 
 p {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 2em;
 }
 
 h1, h2, h3, h4, h4, h6 {
 	font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+	font-size: 7em;
 }
 
 .navbar-default {
@@ -24,6 +30,7 @@ h1, h2, h3, h4, h4, h6 {
 
 .navbar-default .navbar-brand {
 	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -34,6 +41,7 @@ h1, h2, h3, h4, h4, h6 {
 
 .navbar-default .navbar-nav > li > a {
 	color: #ffffff;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -72,7 +80,7 @@ h1, h2, h3, h4, h4, h6 {
 }
 
 .carousel-fade .carousel-inner .active {
-	opacity: 1;
+	opacity: 0;
 }
 
 .carousel-fade .carousel-inner .active.left,
